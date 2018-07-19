@@ -1,0 +1,56 @@
+<html ng-app="userManagement" >
+  <head>  
+ 
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.js"></script>
+    <script src="js/regController.js"></script>
+    <title>register</title>  
+ 
+    <head>
+    <body ng-controller="UserController">
+         <h1>
+ REGISTERATION FORM
+        </h1> 
+        <form ng-submit="submitUser()">
+            <table>
+               
+                <tr>
+                    <th colspan="2">REGISTERATION FORM</th>
+                 </tr>
+                <tr>
+                    <td>Name</td>
+                    <td><input type="text" ng-model="registerForm.name" /></td>
+                </tr>
+                <tr>
+                    <td>mail</td>
+                    <td><input type="text" ng-model="registerForm.email"  /></td>
+                </tr>
+                
+                <tr>
+                    <td>password</td>
+                    <td><input type="text" ng-model="registerForm.password"  /></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="submit" value="Submit" class="blue-button" /></td>
+                </tr>
+                <tr>
+                
+                </tr>
+            </table>
+            
+            
+            <span ng-bind="successName">           
+             </span>
+             <br/>
+            <a href="login.html">login</a>
+        </form>
+         
+  
+   
+ 
+       
+ 
+       
+      
+  </body>
+</html>

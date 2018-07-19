@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html ng-app="userManagement">
+<head>
+<meta charset="windows-1256">
+<title>Insert title here</title>
+
+    <link rel="stylesheet" href="css/style.css">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.js"></script>
+    <script src="js/loginController.js"></script>
+    <title>login</title>  
+
+
+    </head>
+    <body ng-controller="UserController">
+         <h1>
+ LOGIN FORM
+        </h1> 
+        <form >
+            <table>
+               
+                <tr>
+                    <th colspan="2">LOGIN FORM</th>
+                 </tr>
+                
+                <tr>
+                    <td>Id</td>
+                    <td><input type="text" ng-model="loginForm.id"  /></td>
+                </tr>
+                <tr>
+                    <td>password</td>
+                    <td><input type="text" ng-model="loginForm.password" /></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="submit" value="login" class="blue-button" ng-click="getUser(user)"/></td>
+                </tr>
+            </table>
+        </form>
+          <span  ng-bind="welcomMsg"/>
+ 
+      
+  </body>
+</html>
+<body>
+
+</body>
+</html>
